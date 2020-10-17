@@ -1,0 +1,21 @@
+@import url(./reset.css);
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&family=Piazzolla:wght@600&display=swap');
+
+/* font-family: 'Noto Sans', sans-serif; */
+/* font-family: 'Piazzolla', serif; */
+
+:root{
+    --dark: #170409;
+    --dgreen: #67917A;
+    --lgreen: #B8AF03;
+    --pink: #E33258;
+    --white: #FeFFFF; 
+
+    --serif: 'Piazzolla', serif;
+    --sans: 'Noto Sans', sans-serif; 
+}
+
+*{
+    box-sizing: border-box;
+}
