@@ -5,6 +5,9 @@
 /* font-family: 'Noto Sans', sans-serif; */
 /* font-family: 'Piazzolla', serif; */
 
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css");
+/* <i class="fas fa-info-circle"></i> */
+
 :root{
     --dark: #170409;
     --dgreen: #67917A;
