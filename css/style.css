@@ -9,10 +9,10 @@
 /* <i class="fas fa-info-circle"></i> */
 
 :root{
-    --dark: #170409;
-    --dgreen: #67917A;
-    --lgreen: #B8AF03;
-    --pink: #E33258;
+    --dark: RGB(29 0 8);
+    --dgreen: RGB(71 150 118);
+    --lgreen: RGB(180 186 0);
+    --pink: RGB(255 0 60);
     --white: #FeFFFF; 
 
     --serif: 'Piazzolla', serif;
@@ -104,4 +104,116 @@ header>img{
         height: 100px;
         margin-top: 55px;
     }
+}
+
+
+/* ----------------------  MAIN  ------------------------- */
+.row1{
+    display: flex;
+    flex-wrap: wrap; 
+    padding: 60px 15% 26px 15%; 
+}
+
+.cajainput{
+    border: none;
+    border-radius: 20px;
+    background-color: var(--white);
+    color: var(--dark);
+    font-family: var(--sans);
+    font-size: 14px;
+    padding: 4px 20px;
+}
+
+#nueva{
+    width: 41%;
+    margin: 0 1%;
+}
+
+.select{
+    position: relative;
+    width: 41%;
+    margin: 0 1%;
+}
+
+#eligecategoria{
+    width: 100%;
+    appearance: none;
+}
+
+.flechadesplegable{
+    position: absolute;
+    display: block;
+    background-color: #67917A;
+    height: 100%;
+    width: 40px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    top: 0;
+    right: 0;
+    pointer-events: none;
+}
+
+.flechadesplegable::before,
+.flechadesplegable::after{
+    --size: 8px;
+    content: '';
+    position: absolute;
+}
+
+.flechadesplegable::before{
+    border-left: var(--size) solid transparent;
+    border-right: var(--size) solid transparent;
+    border-top: var(--size) solid var(--white);
+
+    top: 18px;
+    right: 13px;
+}
+
+.flechadesplegable::after{
+    border-left: var(--size) solid transparent;
+    border-right: var(--size) solid transparent;
+    border-bottom: var(--size) solid var(--white);
+
+    top: 6px;
+    right: 13px;
+}
+
+#botonposponer{
+    background-color: var(--dgreen);
+    color: var(--white);
+    margin: 0 1%;
+    width: 12%;
+    /* min-width: 40px; */
+}
+
+#botonposponer:hover{
+    cursor: pointer;
+}
+
+#or{
+    margin: 0 auto;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: var(--dark);
+    color: var(--pink);
+    font-family: var(--sans);
+    text-align: center;
+    padding: 6px 0;
+}
+
+.row2{
+    display: flex;
+    flex-wrap: wrap; 
+    padding: 26px 20%; 
+}
+
+#buscar{
+    width: 41%;
+    margin: 0 1% 0 7%; 
+}
+
+#filtracategoria{
+    appearance: none;
+    width: 100%;
 }

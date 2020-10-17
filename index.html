@@ -27,31 +27,37 @@
     <!--------------------  MAIN   --------------------- -->
     <main>
 
-        <div id="botones" >
+        <!-- <div id="botones" > -->
             <!-- AÑADIR NUEVA -->
-            <div>
-                <input id="nuevo" type="text" placeholder="Insert crap" >
-                <select id="eligecategoria">
-                    <option value="0" selected> Select priority </option>
-                    <option value="urgente"> Urgent crap </option>
-                    <option value="diaria"> Daily crap</option>
-                    <option value="mensual"> Monthly crap </option>
-                </select>
-                <input type="submit" value="Put it off" id="botonposponer">
+            <div class="row1">
+                <input class="cajainput" id="nueva" type="text" placeholder="Insert crap" >
+                <div class="select">
+                    <select class="cajainput" id="eligecategoria">
+                        <option value="0" selected> Select priority </option>
+                        <option value="urgente"> Urgent crap </option>
+                        <option value="diaria"> Daily crap</option>
+                        <option value="mensual"> Monthly crap </option>
+                    </select>
+                    <span class="flechadesplegable" ></span>
+                </div>
+                <input type="submit" value="Put it off" class="cajainput" id="botonposponer">
             </div>
-            <p  id="avisos"></p>
-            <div>OR</div>
+            <!-- <p  id="avisos"></p> -->
+            <div id="or">OR</div>
             <!-- BUSCAR Y FILTRAR -->
-            <div>
-                <input id="buscar" type="text" placeholder="Search crap">
-                <select id="filtracategoria">
-                    <option value="0" selected> Search from priority </option>
-                    <option value="filtraurgente"> Urgent crap </option>
-                    <option value="filtradiaria"> Daily crap </option>
-                    <option value="filtramensual"> Monthly crap </option>
-                </select>
+            <div class="row2">
+                <input id="buscar" class="cajainput" type="text" placeholder="Search crap">
+                <div class="select">
+                    <select class="cajainput" id="filtracategoria">
+                        <option value="0" selected> Search from priority </option>
+                        <option value="filtraurgente"> Urgent crap </option>
+                        <option value="filtradiaria"> Daily crap </option>
+                        <option value="filtramensual"> Monthly crap </option>
+                    </select>
+                    <span class="flechadesplegable" ></span>
+                </div>
             </div>
-        </div>
+        <!-- </div> -->
         <!-- LISTA DE TAREAS -->
         <section>
             <H2>Lista de tareas</H2>
