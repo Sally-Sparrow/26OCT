@@ -22,3 +22,57 @@
 *{
     box-sizing: border-box;
 }
+
+/* ----------------------  HEADER  ------------------------- */
+body{
+    font-family: var(--serif);
+    background-color: var(--pink);
+    font-size: 16px;
+}
+
+header{
+    background-color: var(--dark);
+    color: var(--white);
+    font-size: 40px;
+    height: 500px;
+}
+
+header i{
+    color: var(--pink);
+    margin-top: 25px;
+    margin-left: 25px;
+}
+
+header>div{
+    text-align: center;
+    padding: 100px 0;
+}
+
+header>div>div{
+    font-family: var(--sans);
+    font-size: 28px;
+    display: inline-block;
+    position: relative;
+    top: -16px;
+    left: 4px;
+}
+
+header>div>div>div{
+    position: absolute;
+    font-size: 14px;
+    rotate: -90deg;
+    left: -24px;
+    bottom: 12px;  
+}
+
+header>p{
+    text-align: center;
+    font-size: 62px;
+}
+
+header>p img{
+    /* display: inline-block; */
+    /* height: 80px; */
+    margin-left: -64px;
+    margin-top: 10px;
+}
