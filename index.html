@@ -27,6 +27,30 @@
     <!--------------------  MAIN   --------------------- -->
     <main>
 
+        <div id="botones" >
+            <div>
+                <input id="nuevo" type="text" placeholder="Insert crap" >
+                <select id="eligecategoria">
+                    <option value="0" selected> Select priority </option>
+                    <option value="urgente"> Urgent crap </option>
+                    <option value="diaria"> Daily crap</option>
+                    <option value="mensual"> Monthly crap </option>
+                </select>
+                <input type="submit" value="Put it off" id="botonposponer">
+            </div>
+            <p  id="avisos"></p>
+            <div>OR</div>
+            <div>
+                <input id="burcar" type="text" placeholder="Search crap">
+                <select id="filtracategoria">
+                    <option value="0" selected> Search from priority </option>
+                    <option value="filtraurgente"> Urgent crap </option>
+                    <option value="filtradiaria"> Daily crap </option>
+                    <option value="filtramensual"> Monthly crap </option>
+                </select>
+            </div>
+        </div>
+
     </main>
 
     <script src="js/functions.js" ></script>
