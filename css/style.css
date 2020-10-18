@@ -108,6 +108,7 @@ header>img{
 
 
 /* ----------------------  MAIN  ------------------------- */
+/* Botones */
 .row1{
     display: flex;
     flex-wrap: wrap; 
@@ -183,7 +184,7 @@ header>img{
     color: var(--white);
     margin: 0 1%;
     width: 12%;
-    /* min-width: 40px; */
+    min-width: 40px;
 }
 
 #botonposponer:hover{
@@ -205,7 +206,7 @@ header>img{
 .row2{
     display: flex;
     flex-wrap: wrap; 
-    padding: 26px 20%; 
+    padding: 26px 20% 60px 20%; 
 }
 
 #buscar{
@@ -216,4 +217,68 @@ header>img{
 #filtracategoria{
     appearance: none;
     width: 100%;
+}
+
+@media( max-width: 800px ){
+    
+}
+
+
+/* Lista de tareas */
+main section h2{
+    display: none;
+}
+
+main section article{
+    position: relative;
+    padding: 20px 4%;
+    background-color: var(--white);
+    margin: 1% 5%;
+    border-radius: 14px;
+
+}
+
+main section article .color{
+    position: absolute;
+    background-color: var(--lgreen);
+    height: 100%;
+    width: 20px;
+    left: 0;
+    top: 0;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+main section article h3{
+}
+
+main section article div:last-child{
+    position: absolute;
+    background-color: var(--pink);
+    height: 80%;
+    width: 48px;
+    border-radius: 50%;
+    top: 6px;
+    right: 7px;
+}
+
+main section article div:last-child input{
+    background: none;
+    border: none;
+    height: 100%;
+    width: 100%;
+}
+main section article div:last-child input:hover{
+    cursor: pointer;
+}
+
+main section article div:last-child i{
+    position: absolute;
+    color: var(--white);
+    font-size: 30px;
+    top: 7px;
+    left: 12px;
+    pointer-events: none;
+    
+
 }
