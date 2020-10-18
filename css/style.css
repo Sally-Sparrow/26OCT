@@ -264,7 +264,7 @@ main section article{
 
 main section article .color{
     position: absolute;
-    background-color: var(--lgreen);
+    /* background-color: var(--lgreen); */
     height: 100%;
     width: 20px;
     left: 0;

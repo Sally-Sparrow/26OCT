@@ -1,5 +1,6 @@
 //alert( 'fuck css' );
 
+let crapSection = document.querySelector( '#crapsection' );
 
 // --------- COLOR INFO -------------
 let info = document.querySelector( '#colorinfo' );
@@ -19,6 +20,6 @@ function getCrap( event ){
     let crapPriority = document.querySelector( '#eligecategoria' ).value;
     //console.log( newCrap, crapPriority );
     addCrap( newCrap, crapPriority );
-    //printCrap( pSection, newCrap, crapPriority );
+    printCrapList( crapSection, crapArray );
 }
 
