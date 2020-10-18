@@ -220,8 +220,29 @@ header>img{
 }
 
 @media( max-width: 800px ){
-    
+    .row1, 
+    .row2{
+        flex-direction: column;
+        border: 2px solid var(--white);
+        padding: 25px;
+        margin: 40px 10%;
+    }
+    #nueva,
+    #buscar{
+        width: 100%;
+        margin: 0  0 20px 0;
+    }
+    .select{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    #botonposponer{
+        width: 50%;
+        margin-left: 25%;
+        margin-right: 25%;
+    }
 }
+
 
 
 /* Lista de tareas */
@@ -231,7 +252,7 @@ main section h2{
 
 main section article{
     position: relative;
-    padding: 20px 4%;
+    padding: 15px 4%;
     background-color: var(--white);
     margin: 1% 5%;
     border-radius: 14px;
@@ -256,7 +277,7 @@ main section article div:last-child{
     position: absolute;
     background-color: var(--pink);
     height: 80%;
-    width: 48px;
+    width: 40px;
     border-radius: 50%;
     top: 6px;
     right: 7px;
@@ -275,10 +296,8 @@ main section article div:last-child input:hover{
 main section article div:last-child i{
     position: absolute;
     color: var(--white);
-    font-size: 30px;
-    top: 7px;
-    left: 12px;
+    font-size: 28px;
+    top: 6px;
+    left: 8.5px;
     pointer-events: none;
-    
-
 }
