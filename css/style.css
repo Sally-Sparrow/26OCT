@@ -42,6 +42,9 @@ header i{
     margin-top: 25px;
     margin-left: 25px;
 }
+header i:hover{
+    cursor: pointer;
+}
 
 header>div{
     text-align: center;
@@ -269,8 +272,14 @@ main section article .color{
     border-bottom-left-radius: 10px;
     border-top-left-radius: 10px;
 }
-
-main section article h3{
+.dgreen{
+    background-color: var(--dgreen);
+}
+.lgreen{
+    background-color: var(--lgreen);
+}
+.dark{
+    background-color: var(--dark);
 }
 
 main section article div:last-child{

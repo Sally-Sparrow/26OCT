@@ -5,14 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Crap To Do</title>
 
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/data.js" ></script>
 </head>
 
 
 <body>
     <!--------------------  HEADER   --------------------- -->
     <header>
-            <a href="#"><i class="fas fa-info-circle"></i></a>
+            <i id="colorinfo" class="fas fa-info-circle"></i>
             <div>
                 <p>WriteItDown</p>
                 <div>PROCRASTINATE 
@@ -59,23 +60,23 @@
             </div>
         <!-- </div> -->
         <!-- LISTA DE TAREAS -->
-        <section>
+        <section id="crapsection">
             <H2>Lista de tareas</H2>
                 
-                    <!-- <article>
+                    <article>
                         <h3>Tarea</h3>
-                        <div class="color" ></div>
+                        <div class="color"></div> 
                         <div>
                             <input type="submit" value="" id="eliminar">
                             <i class="fas fa-trash"></i> 
                         </div>
-                    </article> -->
+                    </article>
 
         </section>
 
     </main>
 
-    <script src="js/functions.js" ></script>
-    <script src="js/events.js" ></script>
+    <script src="./js/functions.js" ></script>
+    <script src="./js/events.js" ></script>
 </body>
 </html>
