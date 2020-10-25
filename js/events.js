@@ -1,6 +1,7 @@
 //alert( 'fuck css' );
-
 let crapSection = document.querySelector( '#crapsection' );
+
+
 
 // --------- COLOR INFO -------------
 let info = document.querySelector( '#colorinfo' );
@@ -18,8 +19,14 @@ function getCrap( event ){
     event.preventDefault();
     let newCrap = document.querySelector( '#nueva' ).value;
     let crapPriority = document.querySelector( '#eligecategoria' ).value;
-    //console.log( newCrap, crapPriority );
     addCrap( newCrap, crapPriority );
-    printCrapList( crapSection, crapArray );
+    printOneCrap( crapSection, crapArray[crapArray.length -1] );
 }
+
+
+
+//Para las tres tareas que vienen por defecto
+printCrapList( crapSection, crapArray );
+
+
 

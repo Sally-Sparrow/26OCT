@@ -114,7 +114,6 @@ header>img{
 /* Botones */
 .row1{
     display: flex;
-    flex-wrap: wrap; 
     padding: 60px 15% 26px 15%; 
 }
 
@@ -187,7 +186,8 @@ header>img{
     color: var(--white);
     margin: 0 1%;
     width: 12%;
-    min-width: 40px;
+    padding: 4px 4px;
+    min-width: 80px;
 }
 
 #botonposponer:hover{
@@ -307,6 +307,6 @@ main section article div:last-child i{
     color: var(--white);
     font-size: 28px;
     top: 6px;
-    left: 8.5px;
+    left: 7.75px;
     pointer-events: none;
 }
