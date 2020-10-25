@@ -24,7 +24,8 @@ putItOff.addEventListener( 'click', getCrap );
         console.log( crapPriority );
         if( newCrap != "" && crapPriority != 0 ){
             addCrap( newCrap, crapPriority );
-            printOneCrap( crapSection, crapArray[crapArray.length -1] );
+            // printOneCrap( crapSection, crapArray[crapArray.length -1] );
+            printCrapList( crapSection, crapArray );
         }else{ alert( 'Empty fields' ); }
     }
 
@@ -33,4 +34,12 @@ putItOff.addEventListener( 'click', getCrap );
 printCrapList( crapSection, crapArray );
 
 
+
+// --------- BOTON ELIMINAR TAREA -----------
+function putListenersToButtons(){
+    let crapButtons = document.querySelectorAll( '.eliminar' );
+    for ( crapButton of crapButtons ){
+        crapButton.addEventListener( 'click', deleteCrap );
+    }
+}
 

@@ -292,16 +292,6 @@ main section article div:last-child{
     right: 7px;
 }
 
-main section article div:last-child input{
-    background: none;
-    border: none;
-    height: 100%;
-    width: 100%;
-}
-main section article div:last-child input:hover{
-    cursor: pointer;
-}
-
 main section article div:last-child i{
     position: absolute;
     color: var(--white);
@@ -309,4 +299,7 @@ main section article div:last-child i{
     top: 6px;
     left: 7.75px;
     pointer-events: none;
+}
+main section article div:last-child i:hover{
+    cursor: pointer;
 }

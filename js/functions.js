@@ -35,6 +35,7 @@ function printCrapList( pSection, pCrapList ){
     for( crap of pCrapList ){
     printOneCrap( pSection, crap );
     }
+    putListenersToButtons();
 }
 
 
@@ -75,10 +76,33 @@ function searchCrap( pArray, pWord ){
 
 
 //----------  FILTER BY PRIORITY ----------------
-priorityFilter.addEventListener( 'change', filterByPriority );
+priorityFilter.addEventListener( 'change', getPriority );
 
-function filterByPriority( event ){
+function getPriority( event ){
     console.log( event.target.value );
-    let result = crapArray.filter( crap => crap.priority == event.target.value )
+    if( event.target.value == 0 ){
+        printCrapList( crapSection, crapArray ); 
+    }else{
+        filterByPriority( crapArray, event.target.value );
+    }
+}
+
+function filterByPriority( pArray, pPriority ){
+    let result = pArray.filter( crap => crap.priority == pPriority )
     printCrapList( crapSection, result );
+    }
+
+//----------  DELETE CRAP ----------------
+function deleteCrap(event){
+    console.log( event.target.id );
+    let crapToDelete = crapArray.findIndex( function(crap){ return crap.crapid == event.target.id} )
+    console.log(crapToDelete);
+    crapArray.splice( crapToDelete, 1 );
+
+    if( search.value != "" ){ 
+        searchCrap( crapArray, search.value );
+    }else if( priorityFilter.value != 0 ){
+        filterByPriority( crapArray, priorityFilter.value);
+    }
+    else{printCrapList( crapSection, crapArray );}
 }
