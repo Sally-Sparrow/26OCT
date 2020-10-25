@@ -1,12 +1,19 @@
+//-----------  RESET FIELDS  --------------
+let addnewcrap = document.querySelector( '#nueva' );
+let search = document.querySelector( '#buscar' );
+let selectPriority = document.querySelector( '#eligecategoria' );
+let priorityFilter = document.querySelector( '#filtracategoria' );
+
+addnewcrap.value = '';
+search.value = '';
+selectPriority.value = '0';
+priorityFilter.value = '0';
 
 
-//let eligecategoria = document.querySelector( '#eligecategoria' );
-//let filtracategoria = document.querySelector( '#filtracategoria' );
-//eligecategoria.value = '0';
-//filtracategoria.value = '0';
-let idAsignada = crapArray.length;
 
 //---------- INCLUDE CRAP ----------------
+let idAsignada = crapArray.length;
+
 function addCrap( pNewCrap, pCrapPriority ){
     crapArray[crapArray.length] = { //quiza deberias hacerlo con push...
         crapid: idAsignada, 
@@ -53,7 +60,6 @@ function printOneCrap( pSection, pCrap ){
 
 
 //----------  SEARCH CRAP ----------------
-let search = document.querySelector( '#buscar' );
 search.addEventListener( 'input', getSearch );
 
 function getSearch( event ){
@@ -69,7 +75,6 @@ function searchCrap( pArray, pWord ){
 
 
 //----------  FILTER BY PRIORITY ----------------
-let priorityFilter = document.querySelector( '#filtracategoria' );
 priorityFilter.addEventListener( 'change', filterByPriority );
 
 function filterByPriority( event ){
