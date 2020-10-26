@@ -27,6 +27,12 @@ putItOff.addEventListener( 'click', getCrap );
             // printOneCrap( crapSection, crapArray[crapArray.length -1] );
             printCrapList( crapSection, crapArray );
         }else{ alert( 'Empty fields' ); }
+        //reset campos new crap
+        let newCrapNow = document.querySelector( '#nueva' );
+        let selectPriority = document.querySelector( '#eligecategoria' );
+        newCrapNow.value = "";
+        selectPriority.value = '0';
+        console.log( newCrap.value );
     }
 
 
